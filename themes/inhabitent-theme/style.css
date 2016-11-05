@@ -582,6 +582,60 @@ a {
   background: url("../../images/logos/inhabitent-logo-full.svg") center center no-repeat, url("../../images/home-hero.jpg") no-repeat center center;
   background-size: auto ,cover; }
 
+.adventures {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .adventures h1 {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center; }
+
+.adventures-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  width: 75%;
+  height: 500px; }
+  .adventures-wrapper .big {
+    background: url("../../images/adventure-photos/canoe-girl.jpg") center;
+    background-size: cover;
+    padding: 0;
+    height: 500px;
+    width: 50%;
+    border-right: 20px solid white; }
+  .adventures-wrapper .mediumwithsmalls {
+    width: 50%; }
+    .adventures-wrapper .mediumwithsmalls .medium {
+      border-bottom: 20px solid white;
+      background: url("../../images/adventure-photos/beach-bonfire.jpg") center;
+      background-size: cover;
+      padding: 0;
+      height: 250px;
+      width: 100%; }
+    .adventures-wrapper .mediumwithsmalls .smalls {
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%; }
+      .adventures-wrapper .mediumwithsmalls .smalls .small1 {
+        background: url("../../images/adventure-photos/mountain-hikers.jpg") center;
+        background-size: cover;
+        height: 250px;
+        width: 50%;
+        border-right: 10px solid white; }
+      .adventures-wrapper .mediumwithsmalls .smalls .small2 {
+        background: url("../../images/adventure-photos/night-sky.jpg") center;
+        background-size: cover;
+        height: 250px;
+        width: 50%;
+        border-left: 10px solid white; }
+
+.type-post {
+  width: 75%; }
+
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/

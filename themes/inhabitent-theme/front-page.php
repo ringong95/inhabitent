@@ -6,33 +6,33 @@
  */
 
 get_header(); ?>
-	<div class="hero-banner">
+<div class="hero-banner">
 	
-	</div>
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-
-			<?php while ( have_posts() ) : the_post(); ?>
-
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
-
-			<?php endwhile; // End of the loop. ?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
-	<section class="adventures">
-	<h1> Latest Adventures</h1>
-		<div class="wrapper">
-  	<div class="big"></div>
-  		<div>
-    <div class="medium"></div>
-    <div class="smalls">
-      <div class="small1"></div>
-      <div class="small2"></div>
-    </div>
-  </div>
 </div>
+<div id="primary" class="content-area">
+	<main id="main" class="site-main" role="main">
+
+		<?php while ( have_posts() ) : the_post(); ?>
+
+			<?php get_template_part( 'template-parts/content', 'page' ); ?>
+
+		<?php endwhile; // End of the loop. ?>
+
+	</main><!-- #main -->
+</div><!-- #primary -->
+
+<section class="adventures">
+	<h1> Latest Adventures</h1>
+	<div class="adventures-wrapper">
+		<div class="big"></div>
+		<div class="mediumwithsmalls">
+			<div class="medium"></div>
+			<div class="smalls">
+				<div class="small1"></div>
+				<div class="small2"></div>
+			</div>
+		</div>
+	</div>
 </section>
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
