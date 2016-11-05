@@ -409,6 +409,8 @@ textarea {
 /* Links */
 a {
   color: royalblue; }
+  a img {
+    height: 30px; }
   a:visited {
     color: purple; }
   a:hover, a:focus, a:active {
@@ -419,10 +421,19 @@ a {
     outline: 0; }
 
 /* Menus */
+.menu-item a {
+  padding: 5px;
+  color: #248A83; }
+
+.menu-menu-1-container {
+  margin-right: 50px; }
+
 .main-navigation {
-  clear: both;
+  position: fixed;
   height: 50px;
+  background: rgba(255, 255, 255, 0.5);
   width: 100%;
+  margin: 0 auto;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
@@ -430,10 +441,12 @@ a {
   -ms-flex-align: center;
       align-items: center; }
   .main-navigation .logo {
+    margin-left: 50px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
     height: 100%; }
-  .main-navigation a {
-    max-width: 100%;
-    max-height: 100%; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -564,6 +577,11 @@ a {
 .widget_search .search-submit {
   display: none; }
 
+.hero-banner {
+  height: 600px;
+  background: url("../../images/logos/inhabitent-logo-full.svg") center center no-repeat, url("../../images/home-hero.jpg") no-repeat center center;
+  background-size: auto ,cover; }
+
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
@@ -666,3 +684,32 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.site-footer {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 5%;
+  background: url("../../images/dark-wood.png");
+  color: white;
+  display: -ms-flexbox;
+  display: flex; }
+  .site-footer .contactInfo {
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%; }
+    .site-footer .contactInfo a {
+      color: white; }
+    .site-footer .contactInfo span {
+      padding: 1%; }
+  .site-footer .copyright {
+    margin: 0 auto; }
+  .site-footer .businessHour {
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%; }
+  .site-footer .footerLogo {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+        align-items: flex-start;
+    -ms-flex-pack: end;
+        justify-content: flex-end;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%; }
