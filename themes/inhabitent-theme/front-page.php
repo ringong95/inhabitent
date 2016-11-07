@@ -24,7 +24,9 @@ get_header(); ?>
 <section class="adventures">
 	<h1> Latest Adventures</h1>
 	<div class="adventures-wrapper">
-		<div class="big"></div>
+		<div class="big">
+			<a> Getting Back to Nature in a Canoe</a>
+		</div>
 		<div class="mediumwithsmalls">
 			<div class="medium"></div>
 			<div class="smalls">

@@ -598,8 +598,8 @@ a {
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
-  width: 75%;
-  height: 500px; }
+  width: 1120px;
+  height: 575px; }
   .adventures-wrapper .big {
     background: url("../../images/adventure-photos/canoe-girl.jpg") center;
     background-size: cover;
@@ -607,6 +607,9 @@ a {
     height: 500px;
     width: 50%;
     border-right: 20px solid white; }
+    .adventures-wrapper .big a {
+      text-decoration: none;
+      color: BLack; }
   .adventures-wrapper .mediumwithsmalls {
     width: 50%; }
     .adventures-wrapper .mediumwithsmalls .medium {
@@ -634,6 +637,10 @@ a {
         border-left: 10px solid white; }
 
 .type-post {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 75%; }
 
 /*--------------------------------------------------------------
