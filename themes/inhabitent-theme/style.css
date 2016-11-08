@@ -643,6 +643,18 @@ a {
       flex-wrap: wrap;
   width: 75%; }
 
+.wp-post-image {
+  margin: 0 auto; }
+
+.site-main {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  background: steelblue;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
