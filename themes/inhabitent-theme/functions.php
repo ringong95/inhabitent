@@ -96,6 +96,8 @@ function red_starter_scripts() {
 
 add_action( 'wp_enqueue_scripts', 'red_starter_scripts' );
 
+
+
 /**
 * Removing the editor's from the theme menu.
 */

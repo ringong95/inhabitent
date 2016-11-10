@@ -6,10 +6,10 @@
  */
 
 get_header(); ?>
-
+<div class="side_bar_enabler">
 	<div id="primary" class="content-area">
 
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="site-main, journal_index" role="main">
 
 		<?php if ( have_posts() ) : ?>
 
@@ -38,4 +38,5 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php get_sidebar(); ?>
+</div>
 <?php get_footer(); ?>

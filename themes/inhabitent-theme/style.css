@@ -43,6 +43,53 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Page Templates
 	## Front page
 --------------------------------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -589,17 +636,61 @@ a {
       flex-wrap: wrap;
   -ms-flex-pack: center;
       justify-content: center; }
-  .adventures h1 {
-    width: 50%;
-    margin: 0 auto;
+  .adventures h2 {
+    width: 60%;
+    font-size: 50px;
     text-align: center; }
+
+.read-more {
+  position: absolute;
+  font-size: 1rem;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  border: 1px solid black;
+  bottom: 10px;
+  left: 15px;
+  padding: 0.75rem 1.5rem; }
+  .read-more:hover {
+    background-color: #248A83;
+    border: none;
+    color: white; }
+
+.wp-post-image {
+  height: 250px; }
+
+.journal_wrapper {
+  position: relative;
+  border: 1px grey solid;
+  height: 200px; }
+  .journal_wrapper p {
+    font-size: .75rem;
+    margin: 0px;
+    margin-left: 15px;
+    margin-top: 10px; }
+  .journal_wrapper a:visited {
+    color: black; }
+  .journal_wrapper a h3 {
+    margin-left: 15px;
+    font-size: 1.35rem; }
+
+.frontpageposts {
+  display: -ms-flexbox;
+  display: flex;
+  width: 1120px;
+  margin: 0 auto;
+  -ms-flex-pack: center;
+      justify-content: center; }
+
+.onefrontpagepost {
+  -ms-flex-preferred-size: 33.333%;
+      flex-basis: 33.333%; }
 
 .adventures-wrapper {
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
-  width: 75%;
-  height: 500px; }
+  width: 1120px; }
   .adventures-wrapper .big {
     background: url("../../images/adventure-photos/canoe-girl.jpg") center;
     background-size: cover;
@@ -607,6 +698,9 @@ a {
     height: 500px;
     width: 50%;
     border-right: 20px solid white; }
+    .adventures-wrapper .big a {
+      text-decoration: none;
+      color: black; }
   .adventures-wrapper .mediumwithsmalls {
     width: 50%; }
     .adventures-wrapper .mediumwithsmalls .medium {
@@ -633,8 +727,100 @@ a {
         width: 50%;
         border-left: 10px solid white; }
 
-.type-post {
-  width: 75%; }
+.taxonomy_loop {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  width: 1120px;
+  margin: 10px auto; }
+
+.category-links {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border: 1px #666 solid;
+  border-top: 5px #666 solid;
+  width: 24%;
+  -ms-flex-pack: center;
+      justify-content: center;
+  height: 250px;
+  text-align: center; }
+  .category-links:hover {
+    border-color: #fff9c0; }
+  .category-links p {
+    width: 90%;
+    -ms-flex-item-align: end;
+        align-self: flex-end; }
+  .category-links img {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: 50px;
+    height: 50px; }
+
+.category-link {
+  font-size: 1rem;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  border: 1px solid black;
+  height: 50px;
+  width: 100px;
+  padding: 0.75rem 1.5rem;
+  background-color: #248A83; }
+  .category-link:hover {
+    background-color: #1f7670; }
+  .category-link:visited {
+    color: white; }
+
+.advntures-button-wrapper {
+  width: 1120px;
+  margin: 0px auto;
+  margin-top: 50px; }
+
+.advntures-button {
+  margin-top: 40px;
+  border: 1px grey solid;
+  padding: 15px 70px;
+  text-align: left;
+  color: white;
+  background-color: #248A83; }
+  .advntures-button:hover {
+    color: white;
+    background-color: #1f7670; }
+
+.about_text {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 1120px;
+  margin: 0 auto; }
+  .about_text h2 {
+    text-align: center; }
+
+#login h1 a {
+  background: blue;
+  background-size: contain; }
+
+.about_hero_banner {
+  height: 600px;
+  background-size: cover; }
+
+.products-home {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 1120px;
+  margin: 0 auto; }
+
+.individual-product {
+  width: 23%; }
 
 /*--------------------------------------------------------------
 # Content
@@ -673,6 +859,23 @@ a {
 
 .bypostauthor {
   display: block; }
+
+.type-post {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 75%; }
+
+.wp-post-image {
+  margin: 0 auto; }
+
+.type-flex {
+  display: -ms-flexbox;
+  display: flex; }
+
+.adventures {
+  margin-bottom: 50px; }
 
 /*--------------------------------------------------------------
 # Media
@@ -738,6 +941,23 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.primary {
+  display: -ms-flexbox;
+  display: flex; }
+
+.side_bar_enabler {
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 100px; }
+
+.journal_index {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center; }
+
 .site-footer {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;

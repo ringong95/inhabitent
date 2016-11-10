@@ -3,30 +3,92 @@
 	background: url("../../images/logos/inhabitent-logo-full.svg") center center no-repeat, url("../../images/home-hero.jpg") no-repeat center center;
 	background-size: auto ,cover;
 }
+
 .adventures{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	h1{
-		width: 50%;
-		margin: 0 auto;
+	h2{
+		width: 60%;
+		font-size: 50px;
+		// margin: 0 auto;
 		text-align: center;
 	}
+}
+.read-more {
+	position: absolute;
+	font-size: 1rem;
+	text-decoration: none;
+	text-align: center;
+	color: black;
+	border: 1px solid black;
+	bottom: 10px;
+	left: 15px;
+	padding: 0.75rem 1.5rem;    
+
+	&:hover {
+		background-color: $color_text-green ;
+		border: none;
+		color: white;
+
+	}
+}
+
+.wp-post-image{
+	height: 250px;
+}
+.journal_wrapper{
+	position: relative;
+	border: 1px grey solid;
+	height: 200px;
+	p{
+		font-size: .75rem;
+		margin:0px;
+		margin-left: 15px;
+		margin-top: 10px;
+	}
+	a {
+		&:visited{
+			&:hover{
+
+			}
+			color: black;
+		}
+		h3{
+			margin-left: 15px;
+			font-size: 1.35rem;
+		}
+	}
+}
+
+.frontpageposts{
+	display: flex;
+	width: 1120px;
+	margin: 0 auto;
+	justify-content: center;
+
+}
+.onefrontpagepost{
+	flex-basis: 33.333%;
+	// margin: 0 auto;
 }
 .adventures-wrapper{
 
 	display:flex;
 	margin: 0 auto;
-	width: 75%;
-	height: 500px;
+	width: 1120px;
+	// height: 575px;	
 	.big {
 		background:  url("../../images/adventure-photos/canoe-girl.jpg")center;
 		background-size: cover;
 		padding: 0;
 		height: 500px; 
-		width: 50%;
+		width: 50%;	
 		border-right: 20px solid white;
-
+		a{
+			text-decoration: none;
+			color: black;	
+		}
 	} 
 	.mediumwithsmalls{
 		width: 50%;
@@ -43,18 +105,86 @@
 			width: 100%;
 			.small1{
 				background: url("../../images/adventure-photos/mountain-hikers.jpg")center;
-			background-size: cover;
+				background-size: cover;
 				height: 250px;
 				width: 50%;
 				border-right: 10px solid white;
 			}
 			.small2{
 				background: url("../../images/adventure-photos/night-sky.jpg")center;
-			background-size: cover;
+				background-size: cover;
 				height: 250px;
 				width: 50%;
 				border-left: 10px solid white;
 			}
 		}
+	}
+}
+.taxonomy_loop{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content:space-between;
+	width: 1120px;
+	margin: 10px auto;
+}
+
+.category-links{
+	display: flex;
+	flex-wrap:wrap;
+	border: 1px $color__border-abbr solid;
+	border-top: 5px $color__border-abbr solid;
+	width: 24%;
+	justify-content: center;
+	height: 250px;
+	text-align: center;
+	&:hover{
+		border-color: $color__background-ins;
+	}
+	p{
+		width: 90%;
+		align-self: flex-end;
+	}
+	img{
+		align-self: center;
+		width: 50px;
+		height: 50px;
+	}
+
+}
+.category-link{
+	font-size: 1rem;
+	text-decoration: none;
+	text-align: center;
+	color: white;
+	border: 1px solid black;
+	height: 50px;
+	width: 100px;
+	padding: 0.75rem 1.5rem;    
+	background-color: $color_text-green;
+	&:hover {
+		background-color: $color_text-darkgreen;
+		
+	}
+	&:visited{
+		color:white;
+	}
+}
+.advntures-button-wrapper{
+	width: 1120px;
+	// height: 100px;
+
+	margin: 0px auto;
+	margin-top: 50px;
+}
+.advntures-button{
+	margin-top: 40px;
+	border: 1px grey solid;
+	padding: 15px 70px;
+	text-align: left;
+	color: white;	
+	background-color: $color_text-green;
+	&:hover{
+		color: white;
+		background-color: $color_text-darkgreen
 	}
 }
