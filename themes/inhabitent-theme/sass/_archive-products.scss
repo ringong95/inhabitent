@@ -2,9 +2,40 @@
 	display: flex;
 	flex-wrap: wrap;
 	width: 1120px;
+
 	margin: 0 auto;
 }
 .individual-product{
+		border: 1px solid grey;
 	width: 23%;
 	margin: 1%;
+	img{
+		border-bottom: 5px solid grey;
+	}
+}
+.product-text{
+	display: flex;
+	justify-content: space-around;
+	margin: 0 auto;
+	width: 240px;
+	// border: 1px grey solid;
+
+	h2{
+		float: left; 
+		width: 200px; 
+		overflow: hidden; 
+		white-space: nowrap;
+		span{
+			
+			&:after{
+				content: " .................................................................................." 
+			}
+		}
+	}
+	p{
+		float: left; 
+		width: 40px; 
+		overflow: hidden;
+
+	}
 }

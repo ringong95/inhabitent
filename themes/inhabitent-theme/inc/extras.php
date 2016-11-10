@@ -52,10 +52,10 @@ function my_styles_method() {
     add_action( 'wp_enqueue_scripts', 'my_styles_method' );
 
     function new_excerpt_more($more) {
-     global $post;
-     return '<div class="readmore"><a class="moretag" href="'. get_permalink($post->ID) . '"> Read More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></div>';
- }
- add_filter('excerpt_more', 'new_excerpt_more');
+       global $post;
+       return '<div class="readmore"><a class="moretag" href="'. get_permalink($post->ID) . '"> Read More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></div>';
+   }
+   add_filter('excerpt_more', 'new_excerpt_more');
 
 /**
 *this sets the store to set 16 posts
@@ -82,3 +82,12 @@ add_filter( 'get_the_archive_title', function ( $title ) {
     return $title;
 
 });
+
+function  inhabitent__product_archive_title ($title){
+    if(is_post_type_archive('product')){
+        $title = 'Shop Stuff';
+    }
+    return $title;
+}
+add_filter( 'get_the_archive_title', 'inhabitent__product_archive_title');
+

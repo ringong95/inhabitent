@@ -47,16 +47,18 @@ get_header(); ?>
 					<?php /* Start the Loop */ ?>
 					<?php while ( have_posts() ) : the_post(); ?>
 						<div class="individual-product">
-
-							<?php if ( has_post_thumbnail() ) : ?>
-								<div>
-									<?php the_post_thumbnail(); ?>
-								</div>
+							<a href="<?php the_permalink(); ?>" rel="bookmark"> 
+								<?php if ( has_post_thumbnail() ) : ?>
+									<div>
+										<?php the_post_thumbnail(); ?>
+									</div>
+								</a>
 							<?php endif; ?>
+							<div class="product-text">
+								<?php the_title( sprintf( '<h2 class="entry-title"><span>', esc_url( get_permalink() ) ), '</span></h2>' ); ?>
 
-							<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-
-							<?php echo CFS()->get( 'price' ); ?>	
+								<p><?php echo CFS()->get( 'product_price' ); ?>	</p>
+							</div>
 						</div>
 					<?php endwhile; ?>
 

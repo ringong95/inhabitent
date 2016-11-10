@@ -662,6 +662,7 @@ a {
 .journal_wrapper {
   position: relative;
   border: 1px grey solid;
+  border-top: 5px grey solid;
   height: 200px; }
   .journal_wrapper p {
     font-size: .75rem;
@@ -820,8 +821,30 @@ a {
   margin: 0 auto; }
 
 .individual-product {
+  border: 1px solid grey;
   width: 23%;
   margin: 1%; }
+  .individual-product img {
+    border-bottom: 5px solid grey; }
+
+.product-text {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0 auto;
+  width: 240px; }
+  .product-text h2 {
+    float: left;
+    width: 200px;
+    overflow: hidden;
+    white-space: nowrap; }
+    .product-text h2 span:after {
+      content: " .................................................................................."; }
+  .product-text p {
+    float: left;
+    width: 40px;
+    overflow: hidden; }
 
 /*--------------------------------------------------------------
 # Content
