@@ -34,10 +34,17 @@ a {
 	a{
 		padding: 5px;
 		color: $color_text-green;
+		&:hover{
+			color: $color_text-darkgreen;
+		}
 	}
 }
 .menu-menu-1-container{
-	margin-right: 50px;
+	margin:auto;
+
+}
+.right-menu{
+	display: flex;
 }
 .main-navigation {
 	position: fixed;

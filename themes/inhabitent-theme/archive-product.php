@@ -9,12 +9,13 @@ get_header(); ?>
 
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
+	<div class="mini-nav">
 		<?php
-		the_archive_title( '<h1 class="page-title">', '</h1>' );
-		the_archive_description( '<div class="taxonomy-description">', '</div>' );
+		the_archive_title( '<h1 class="page-title shop-stuff">', '</h1>' );
+	
 		?>		
 
-		<div class="taxonomy_loop">
+		<div class="product_taxonomy_loop">
 
 			<?php 
 			$taxonomies  = get_terms( array(
@@ -24,12 +25,13 @@ get_header(); ?>
 
 				foreach ( $taxonomies  as $term ):?>
 
-				<div>
+				<div class="minibutton">
 
 
 					<a  href="product_type/<?php echo $term->slug;?>"> <?php echo $term->name ?> </a>
 				</div>
 			<?php endforeach; ?>
+			</div>
 
 
 		</div>
@@ -74,5 +76,5 @@ get_header(); ?>
 	</main><!-- #main -->
 </div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>
