@@ -7,7 +7,7 @@
 
 get_header(); ?>
 <div class="side_bar_enabler">
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area, journal">
 
 		<main id="main" class="site-main, journal_index" role="main">
 

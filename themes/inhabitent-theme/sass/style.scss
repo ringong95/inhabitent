@@ -43,7 +43,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Galleries
 # Page Templates
 	## Front page
---------------------------------------------------------------*/
+	--------------------------------------------------------------*/
 
 // Imported but not included in the stylesheet.
 
@@ -66,6 +66,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "archive-products";
 @import "singleposts";
 @import "content";
+
 @import "media";
 @import "page-templates";
 @import "footer";
+@import "journal";

@@ -1,0 +1,38 @@
+
+.primary{
+	display: flex;
+}
+.secondary{
+
+}
+.side_bar_enabler{
+	display: flex;
+	// padding-top: 100px;
+}
+.journal_index{
+	padding-top: 100px;
+	display: flex;
+	flex-wrap:wrap;
+	justify-content: center;
+	width: 100%;
+}
+.type-post{
+	display: flex;
+	flex-wrap: wrap;
+	width: 75%
+}
+.widget-area{
+	width: 15%;
+}
+.content-area{
+	// width: 70%;
+}
+.size-large{
+	height: 90%;
+}
+.journal{
+	width: 75%;
+}
+.widget-area{
+	padding-top: 100px;
+}
