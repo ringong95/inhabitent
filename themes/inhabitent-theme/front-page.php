@@ -16,7 +16,6 @@ get_header(); ?>
   <?php 
   $taxonomies  = get_terms( array(
    'taxonomy' => 'product_type',
-   'hide_empty' => true,
    ) );
 
   foreach ( $taxonomies  as $term ):?>
@@ -25,7 +24,7 @@ get_header(); ?>
     <img src="<?php echo get_template_directory_uri() ?>/images/product-type-icons/<?php echo $term->slug?>.svg">
     <p> <?php echo $term->description ?> </p>
 
-    <a href="product_type/<?php echo $term->slug;?> " class="category-link"> <?php echo $term->name ?> </a>
+    <a href="product_type/<?php echo $term->slug;?> " class="category-link"> <?php echo $term->name ?> Stuff</a>
     </div>
  <?php endforeach; ?>
   

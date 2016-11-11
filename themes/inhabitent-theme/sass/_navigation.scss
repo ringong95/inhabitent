@@ -41,6 +41,17 @@ a {
 }
 .menu-menu-1-container{
 	margin:auto;
+	ul{
+		li{
+			a{
+
+				
+
+			font-family: Novecento Sans Web,sans-serif;
+			text-decoration: uppercase;	
+		}
+	}
+}
 
 }
 .search-field{
@@ -55,7 +66,7 @@ a {
 	position: fixed;
 	border-bottom: 1px grey solid;
 	height: 50px;
-	background:rgba(255,255,255,0.5);	
+	background:rgba(255,255,255,0.85);	
 	width: 100%;
 	margin: 0 auto;
 	display: flex;

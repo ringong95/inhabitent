@@ -137,6 +137,7 @@
 	width: 24%;
 	justify-content: center;
 	height: 250px;
+
 	text-align: center;
 	&:hover{
 		border-color: $color__background-ins;
@@ -153,13 +154,16 @@
 
 }
 .category-link{
-	font-size: 1rem;
+	font-size: .9rem;
 	text-decoration: none;
-	text-align: center;
 	color: white;
-	border: 1px solid black;
+
+	// border: 1px solid black;
 	height: 50px;
-	width: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;	
+	width: 125px;
 	padding: 0.75rem 1.5rem;    
 	background-color: $color_text-green;
 	&:hover {

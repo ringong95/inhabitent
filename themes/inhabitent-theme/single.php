@@ -24,7 +24,6 @@ get_header(); ?>
 			?>
 
 		<?php endwhile; // End of the loop. ?>
-	<button id="close-comments">test</button>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 	<?php get_sidebar(); ?>
