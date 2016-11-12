@@ -24,6 +24,7 @@ get_header(); ?>
 
 					<?php get_template_part( 'template-parts/content', 'single' ); ?>
 
+<<<<<<< HEAD
 			<?php endwhile; ?>
 
 			<?php the_posts_navigation(); ?>
@@ -34,6 +35,10 @@ get_header(); ?>
 
 		<?php endif; ?>
 
+=======
+		<?php endwhile; // End of the loop. ?>
+<?php get_header();?>
+>>>>>>> 4146e22fe0f596858aa157ec08599f539d921277
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

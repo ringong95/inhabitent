@@ -793,7 +793,12 @@ h3 {
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
+<<<<<<< HEAD
   width: 1120px; }
+=======
+  width: 1120px;
+  height: 575px; }
+>>>>>>> 4146e22fe0f596858aa157ec08599f539d921277
   .adventures-wrapper .big {
     background: url("../../images/adventure-photos/canoe-girl.jpg") center;
     background-size: cover;
@@ -803,7 +808,11 @@ h3 {
     border-right: 20px solid white; }
     .adventures-wrapper .big a {
       text-decoration: none;
+<<<<<<< HEAD
       color: black; }
+=======
+      color: BLack; }
+>>>>>>> 4146e22fe0f596858aa157ec08599f539d921277
   .adventures-wrapper .mediumwithsmalls {
     width: 50%; }
     .adventures-wrapper .mediumwithsmalls .medium {
@@ -830,6 +839,7 @@ h3 {
         width: 50%;
         border-left: 10px solid white; }
 
+<<<<<<< HEAD
 .taxonomy_loop {
   display: -ms-flexbox;
   display: flex;
@@ -1000,6 +1010,26 @@ p {
 
 .entry-header {
   position: relative; }
+=======
+.type-post {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 75%; }
+>>>>>>> 4146e22fe0f596858aa157ec08599f539d921277
+
+.wp-post-image {
+  margin: 0 auto; }
+
+.site-main {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  background: steelblue;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
 
 /*--------------------------------------------------------------
 # Content

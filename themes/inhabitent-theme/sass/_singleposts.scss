@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .type-product{
 	
 	
@@ -10,3 +11,20 @@
 	position: relative;
 
 }
+=======
+.type-post{
+	display: flex;
+	flex-wrap: wrap;
+	width: 75%
+	
+}
+.wp-post-image{
+	margin: 0 auto;
+}
+.site-main{
+	display: flex;
+	justify-content: center;
+	background: steelblue;
+	flex-wrap: wrap
+}
+>>>>>>> 4146e22fe0f596858aa157ec08599f539d921277
