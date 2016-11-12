@@ -9,26 +9,29 @@ get_header(); ?>
 <div class="hero-banner">
 	
 </div>
-
-
+<div class="shopstufftitle">
+<h2> Shop Stuff</h2>
+</div>
 <div class="taxonomy_loop">
 
   <?php 
   $taxonomies  = get_terms( array(
    'taxonomy' => 'product_type',
    ) );
+   ?> 
 
-  foreach ( $taxonomies  as $term ):?>
+   <?php
+   foreach ( $taxonomies  as $term ):?>
 
-    <div class="category-links">
+   <div class="category-links">
     <img src="<?php echo get_template_directory_uri() ?>/images/product-type-icons/<?php echo $term->slug?>.svg">
     <p> <?php echo $term->description ?> </p>
 
     <a href="product_type/<?php echo $term->slug;?> " class="category-link"> <?php echo $term->name ?> Stuff</a>
-    </div>
- <?php endforeach; ?>
-  
-  
+  </div>
+<?php endforeach; ?>
+
+
 </div>
 
 <div id="primary" class="content-area">
@@ -68,10 +71,14 @@ get_header(); ?>
    <h2> Latest Adventures</h2>
    <div class="adventures-wrapper">
     <div class="big">
-     <a> Getting Back to Nature in a Canoe</a>
+     <a class="adventures-text"> Getting Back to Nature in a Canoe</a>
+     <a class="read-more">Read More</a>
    </div>
    <div class="mediumwithsmalls">
-     <div class="medium"></div>
+     <div class="medium">
+       <a> A bonfire with friends on the beach
+A Night with Friends at the Beach</a>
+     </div>
      <div class="smalls">
       <div class="small1"></div>
       <div class="small2"></div>
@@ -79,7 +86,7 @@ get_header(); ?>
   </div>
 </div>
 <div class="advntures-button-wrapper">
-<a class="advntures-button"> Button yo </a>
+  <a class="advntures-button"> Button yo </a>
 </div>
 </section>
 

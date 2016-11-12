@@ -6,8 +6,8 @@
 	margin: 0 0 $base__space-unit;
 	height: 200px;
 	ul{
-	list-style: none;
-}
+		list-style: none;
+	}
 	/* Make sure select elements fit in widgets. */
 	select {
 		max-width: 100%;
@@ -23,6 +23,43 @@
 	border-left: 1px grey solid;
 	padding-left: 50px;
 	width: auto;
-
+	aside{
+		h2{
+			font-family: $font__secoundary;
+			text-align: left;
+			font-size: 25px;
+			font-weight: bold;
+			margin-bottom: 25px;
+		}
+	}
 }
 
+.textwidget{
+
+	
+	p{
+		span{
+			
+		}
+	}
+	i{
+		line-height: 1.95;
+		align-self:center;
+		padding-right: 10px;
+	}
+	.dontalign{
+
+	}
+
+	.widget-contact{
+		display: flex;
+		span{
+
+		font-family: $font__main;
+	}
+		i{
+			width: 20px;
+			margin-right: 10px;
+		}
+	}
+}

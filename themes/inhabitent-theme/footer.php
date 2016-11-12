@@ -24,9 +24,9 @@
 	</div>
 	<div class="businessHour"> 
 		<h3> Business Hours</h3>
-		<p> Monday-Friday: 9am to 5pm </p>
-		<p> Saturday: 10am to 2pm</p>
-		<p> Sunday: Closed</p>
+		<p><span class="bolden"> Monday-Friday:</span> 9am to 5pm </p>
+		<p><span class="bolden"> Saturday:</span> 10am to 2pm</p>
+		<p><span class="bolden"> Sunday:</span> Closed</p>
 	</div>
 	<div class="footerLogo">
 	<img src="<?php echo get_template_directory_uri() ?>/images/logos/inhabitent-logo-text.svg">

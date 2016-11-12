@@ -18,7 +18,7 @@ get_header(); ?>
 </section>
 <section class="about_text">
 	<div class="ourstory">
-	<h2>Our Story</h2>
+	<h2 >Our Story</h2>
 		<p>
 			<?php echo CFS()->get( 'about_our_story' ); ?>
 		</p>

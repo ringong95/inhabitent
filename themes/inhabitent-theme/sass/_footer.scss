@@ -1,6 +1,14 @@
 .site-footer{ 
-flex-wrap: wrap;
-padding: 5%;
+	div{
+		h3{
+			color:#d99054;
+			font-family: 1.5rem;
+			letter-spacing: 2px;
+		}
+	}
+
+	flex-wrap: wrap;
+	padding: 5%;
 	background: url("../../images/dark-wood.png");
 	color: white;
 	display: flex;
@@ -13,19 +21,21 @@ padding: 5%;
 		color: white;
 	}
 	
-		span{
-			padding: 1%;
-		}
+	span{
+		padding: 1%;
+	}
 
-
+}
+.bolden{
+	font-weight: bold;
 }
 .copyright{
 
-		margin: 0 auto;
+	margin: 0 auto;
 		// margin-top: 50px;
 		// flex-basis: 100%;
 	}
-.businessHour{
+	.businessHour{
 		// display: flex;
 		flex-basis: 25%;
 	}

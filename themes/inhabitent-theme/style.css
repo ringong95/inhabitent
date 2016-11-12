@@ -128,6 +128,7 @@ template {
   display: none; }
 
 a {
+  text-decoration: none;
   background-color: transparent; }
 
 a:active,
@@ -270,44 +271,44 @@ th {
 # Embedded Fonts
 --------------------------------------------------------------*/
 @font-face {
-  font-family: '.';
-  src: url("._2.eot");
-  src: url("._2.eot?#iefix") format("embedded-opentype"), url("._2.woff") format("woff"), url("._2.ttf") format("truetype"), url("._2.svg#.") format("svg");
+  font-family: '';
+  src: url("../fonts/NovecentoSansWeb.eot");
+  src: url("../fonts/NovecentoSansWeb.eot?#iefix") format("embedded-opentype"), url("../fonts/NovecentoSansWeb.woff") format("woff"), url("../fonts/NovecentoSansWeb.ttf") format("truetype"), url("../fonts/NovecentoSansWeb.svg#.") format("svg");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
   font-family: '.';
-  src: url("._3.eot");
-  src: url("._3.eot?#iefix") format("embedded-opentype"), url("._3.woff") format("woff"), url("._3.ttf") format("truetype"), url("._3.svg#.") format("svg");
+  src: url("../fonts/NovecentoSansWeb.eot");
+  src: url("../fonts/NovecentoSansWeb.eot?#iefix") format("embedded-opentype"), url("../fonts/NovecentoSansWeb.woff") format("woff"), url("../fonts/NovecentoSansWeb.ttf") format("truetype"), url("../fonts/NovecentoSansWeb.svg#.") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Merriweather';
-  src: url("Merriweather-BoldItalic.eot");
-  src: url("Merriweather-BoldItalic.eot?#iefix") format("embedded-opentype"), url("Merriweather-BoldItalic.woff") format("woff"), url("Merriweather-BoldItalic.ttf") format("truetype"), url("Merriweather-BoldItalic.svg#Merriweather-BoldItalic") format("svg");
+  font-family: 'Merriweather Web';
+  src: url("../fonts/Merriweather-BoldItalic.eot");
+  src: url("../fonts/Merriweather-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Merriweather-BoldItalic.woff") format("woff"), url("../fonts/Merriweather-BoldItalic.ttf") format("truetype"), url("../fonts/Merriweather-BoldItalic.svg#Merriweather Web-BoldItalic") format("svg");
   font-weight: bold;
   font-style: italic; }
 
 @font-face {
-  font-family: 'Merriweather';
-  src: url("Merriweather-LightItalic.eot");
-  src: url("Merriweather-LightItalic.eot?#iefix") format("embedded-opentype"), url("Merriweather-LightItalic.woff") format("woff"), url("Merriweather-LightItalic.ttf") format("truetype"), url("Merriweather-LightItalic.svg#Merriweather-LightItalic") format("svg");
+  font-family: 'Merriweather Web';
+  src: url("../fonts/Merriweather-LightItalic.eot");
+  src: url("../fonts/Merriweather-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Merriweather-LightItalic.woff") format("woff"), url("../fonts/Merriweather-LightItalic.ttf") format("truetype"), url("../fonts/Merriweather-LightItalic.svg#Merriweather Web-LightItalic") format("svg");
   font-weight: 300;
   font-style: italic; }
 
 @font-face {
-  font-family: 'Merriweather';
-  src: url("Merriweather-Light.eot");
-  src: url("Merriweather-Light.eot?#iefix") format("embedded-opentype"), url("Merriweather-Light.woff") format("woff"), url("Merriweather-Light.ttf") format("truetype"), url("Merriweather-Light.svg#Merriweather-Light") format("svg");
+  font-family: 'Merriweather Web';
+  src: url("../fonts/Merriweather-Light.eot");
+  src: url("../fonts/Merriweather-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Merriweather-Light.woff") format("woff"), url("../fonts/Merriweather-Light.ttf") format("truetype"), url("../fonts/Merriweather-Light.svg#Merriweather Web-Light") format("svg");
   font-weight: 300;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Merriweather';
-  src: url("Merriweather-Bold.eot");
-  src: url("Merriweather-Bold.eot?#iefix") format("embedded-opentype"), url("Merriweather-Bold.woff") format("woff"), url("Merriweather-Bold.ttf") format("truetype"), url("Merriweather-Bold.svg#Merriweather-Bold") format("svg");
+  font-family: 'Merriweather Web';
+  src: url("../fonts/Merriweather-Bold.eot");
+  src: url("../fonts/Merriweather-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Merriweather-Bold.woff") format("woff"), url("../fonts/Merriweather-Bold.ttf") format("truetype"), url("../fonts/Merriweather-Bold.svg#Merriweather Web-Bold") format("svg");
   font-weight: bold;
   font-style: normal; }
 
@@ -320,7 +321,7 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: Merriweather Web, serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
@@ -500,8 +501,6 @@ a {
   color: royalblue; }
   a img {
     height: 30px; }
-  a:visited {
-    color: purple; }
   a:hover, a:focus, a:active {
     color: midnightblue; }
   a:focus {
@@ -511,6 +510,8 @@ a {
 
 /* Menus */
 .menu-item a {
+  font-family: Novecento Sans Web,sans-serif;
+  text-transform: uppercase;
   padding: 5px;
   color: #248A83; }
   .menu-item a:hover {
@@ -518,9 +519,6 @@ a {
 
 .menu-menu-1-container {
   margin: auto; }
-  .menu-menu-1-container ul li a {
-    font-family: Novecento Sans Web,sans-serif;
-    text-decoration: uppercase; }
 
 .search-field {
   margin: 0 auto; }
@@ -534,6 +532,7 @@ a {
   border-bottom: 1px grey solid;
   height: 50px;
   background: rgba(255, 255, 255, 0.85);
+  z-index: 1;
   width: 100%;
   margin: 0 auto;
   display: -ms-flexbox;
@@ -686,11 +685,46 @@ a {
   border-left: 1px grey solid;
   padding-left: 50px;
   width: auto; }
+  .widget-area aside h2 {
+    font-family: Novecento Sans Web, sans-serif;
+    text-align: left;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 25px; }
+
+.textwidget i {
+  line-height: 1.95;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-right: 10px; }
+
+.textwidget .widget-contact {
+  display: -ms-flexbox;
+  display: flex; }
+  .textwidget .widget-contact span {
+    font-family: Merriweather Web, serif; }
+  .textwidget .widget-contact i {
+    width: 20px;
+    margin-right: 10px; }
 
 .hero-banner {
   height: 600px;
-  background: url("../../images/logos/inhabitent-logo-full.svg") center center no-repeat, url("../../images/home-hero.jpg") no-repeat center center;
-  background-size: auto ,cover; }
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.01) 100%), url("../../images/logos/inhabitent-logo-full.svg") center center no-repeat, url("../../images/home-hero.jpg") no-repeat center center;
+  background-size: auto,  auto ,cover; }
+
+.shopstufftitle h2 {
+  font-family: Novecento Sans Web, sans-serif;
+  font-size: 40px;
+  margin: 50px 0;
+  text-align: center;
+  font-weight: 300; }
+
+h3 {
+  text-transform: uppercase;
+  font-family: Novecento Sans Web, sans-serif;
+  font-weight: bold;
+  color: #248A83; }
 
 .adventures {
   display: -ms-flexbox;
@@ -713,7 +747,9 @@ a {
   border: 1px solid black;
   bottom: 10px;
   left: 15px;
-  padding: 0.75rem 1.5rem; }
+  padding: 0.75rem 1.5rem;
+  text-transform: uppercase;
+  font-family: Novecento Sans Web, sans-serif; }
   .read-more:hover {
     background-color: #248A83;
     border: none;
@@ -723,10 +759,11 @@ a {
   height: 250px; }
 
 .journal_wrapper {
+  background: white;
   position: relative;
   border: 1px grey solid;
   border-top: 5px grey solid;
-  height: 200px; }
+  height: 175px; }
   .journal_wrapper p {
     font-size: .75rem;
     margin: 0px;
@@ -735,6 +772,7 @@ a {
   .journal_wrapper a:visited {
     color: black; }
   .journal_wrapper a h3 {
+    letter-spacing: 1.5px;
     margin-left: 15px;
     font-size: 1.35rem; }
 
@@ -747,6 +785,7 @@ a {
       justify-content: center; }
 
 .onefrontpagepost {
+  background: grey;
   -ms-flex-preferred-size: 33.333%;
       flex-basis: 33.333%; }
 
@@ -867,18 +906,25 @@ a {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   max-width: 1120px;
-  margin: 0 auto; }
+  margin: 40px auto;
+  width: 55%;
+  font-family: Merriweather Web,serif; }
   .about_text div h2 {
     text-align: center;
-    font-size: 50px; }
+    font-size: 50px;
+    font-family: Novecento Sans Web,sans-serif;
+    text-transform: uppercase; }
+
+.about_hero_banner {
+  height: 100vh;
+  background-size: cover; }
 
 #login h1 a {
   background: blue;
   background-size: contain; }
 
-.about_hero_banner {
-  height: 600px;
-  background-size: cover; }
+p {
+  font-family: Merriweather Web, serif; }
 
 .products-home {
   display: -ms-flexbox;
@@ -951,6 +997,9 @@ a {
 .single-journal {
   width: 75%;
   padding-top: 100px; }
+
+.entry-header {
+  position: relative; }
 
 /*--------------------------------------------------------------
 # Content
@@ -1072,6 +1121,10 @@ object {
   color: white;
   display: -ms-flexbox;
   display: flex; }
+  .site-footer div h3 {
+    color: #d99054;
+    font-family: 1.5rem;
+    letter-spacing: 2px; }
   .site-footer .contactInfo {
     -ms-flex-preferred-size: 25%;
         flex-basis: 25%; }
@@ -1079,6 +1132,8 @@ object {
       color: white; }
     .site-footer .contactInfo span {
       padding: 1%; }
+  .site-footer .bolden {
+    font-weight: bold; }
   .site-footer .copyright {
     margin: 0 auto; }
   .site-footer .businessHour {
@@ -1102,6 +1157,9 @@ object {
   display: -ms-flexbox;
   display: flex; }
 
+.entry-header {
+  width: 100%; }
+
 .journal_index {
   padding-top: 100px;
   display: -ms-flexbox;
@@ -1112,13 +1170,16 @@ object {
       justify-content: center;
   width: 100%; }
 
+.single-journalpost {
+  width: 80%; }
+
 .type-post {
-  position: relative;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 80%;
+  margin: 0 auto;
   margin-bottom: 100px; }
 
 .size-large {
@@ -1151,14 +1212,26 @@ object {
 
 .journal_index article .entry-title {
   position: absolute;
-  top: 50px;
+  color: white;
+  top: 45px;
   font-size: 25px;
   width: 60%;
   padding: 10px;
+  padding-left: 20px;
+  font-family: Novecento Sans Web, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
   background: #248A83; }
+  .journal_index article .entry-title a:visited {
+    color: white; }
 
 .journal_index article .entry-meta {
   position: absolute;
-  top: 62%;
-  right: 100px;
-  background: #248A83; }
+  bottom: 0;
+  right: 0px;
+  font-size: .75rem;
+  background: #248A83;
+  font-family: Novecento Sans Web, sans-serif;
+  text-transform: uppercase;
+  padding: 5px;
+  color: white; }

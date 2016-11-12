@@ -13,7 +13,7 @@ a {
 	color: $color__link;
 
 	&:visited {
-		color: $color__link-visited;
+		// color: $color__link-visited;
 	}
 	&:hover,
 	&:focus,
@@ -32,6 +32,8 @@ a {
 /* Menus */
 .menu-item{ 
 	a{
+		font-family: Novecento Sans Web,sans-serif;
+			text-transform: uppercase;	
 		padding: 5px;
 		color: $color_text-green;
 		&:hover{
@@ -45,10 +47,9 @@ a {
 		li{
 			a{
 
-				
 
-			font-family: Novecento Sans Web,sans-serif;
-			text-decoration: uppercase;	
+
+			
 		}
 	}
 }
@@ -66,7 +67,8 @@ a {
 	position: fixed;
 	border-bottom: 1px grey solid;
 	height: 50px;
-	background:rgba(255,255,255,0.85);	
+	background:rgba(255,255,255,0.85);
+	z-index: 1;	
 	width: 100%;
 	margin: 0 auto;
 	display: flex;

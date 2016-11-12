@@ -9,6 +9,9 @@
 	display: flex;
 	// padding-top: 100px;
 }
+.entry-header{
+	width: 100%;
+}
 .journal_index{
 	padding-top: 100px;
 	display: flex;
@@ -16,11 +19,14 @@
 	justify-content: center;
 	width: 100%;
 }
+.single-journalpost{
+	width: 80%;
+}
 .type-post{
-	position: relative;
 	display: flex;
 	flex-wrap: wrap;
 	width: 80%;
+	margin: 0 auto;
 	margin-bottom: 100px;
 }
 
@@ -52,30 +58,46 @@
 	border: 1px solid black;
 	text-align: center;
 	text-transform: uppercase;
-		.moretag{
+	.moretag{
 		font-size: .9rem;
 	}
 	&:hover{
 
-	
-	background: $color_text-green;
+
+		background: $color_text-green;
 	}
 }
 .journal_index{
 	article{
 		.entry-title{
-	position: absolute;
-	top: 50px;
-	font-size: 25px;
-	width: 60%;
-	padding: 10px;
-	background: $color_text-green;
-}
-.entry-meta{
-	position: absolute;
-	top: 62%;
-	right: 100px;
-	background: $color_text-green;
-}
+			position: absolute;
+			color: white;
+			top: 45px;
+			font-size: 25px;
+			width: 60%;
+			padding: 10px;
+			padding-left: 20px;
+			font-family: $font__secoundary;
+			font-weight: bold;
+			text-transform: uppercase;
+			background: $color_text-green;
+			a{
+				&:visited{
+					color:white;
+				}
+			}
+		}
+		.entry-meta{
+			position: absolute;
+			bottom: 0;
+			right: 0px;
+			font-size: .75rem;
+			background: $color_text-green;
+			font-family: $font__secoundary;
+			// font-weight: bold;
+			text-transform: uppercase;
+			padding: 5px;
+			color: white;
+		}
 	}
 }
