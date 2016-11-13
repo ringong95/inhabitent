@@ -16,5 +16,17 @@
 }
 .about_hero_banner{
 	height: 100vh;
+	display: flex;
+
 		background-size: cover;
+}
+.about-hero-text{
+	font-family: $font__secoundary;
+	font-size: 50px;
+	font-weight: bold;
+	text-transform: uppercase;
+	align-self:center;
+	color: white;
+	text-align: center;	
+	margin: auto auto;
 }

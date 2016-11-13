@@ -21,6 +21,7 @@
 	
 	
 	<nav id="site-navigation" class="main-navigation" role="navigation">
+	<div class="container">
 		<div class="logo">
 			<a href="inhabitent/home">
 				<img src=" <?php echo get_template_directory_uri() ?>/images/logos/inhabitent-logo-tent.svg" alt="logo">
@@ -32,6 +33,7 @@
 	
 		
 		<?php get_search_form( )?>
+		</div>
 		</div>
 	</nav><!-- #site-navigation -->
 </header><!-- #masthead -->

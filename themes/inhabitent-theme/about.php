@@ -12,7 +12,7 @@ get_header(); ?>
 <section>
 
 	<div class="about_hero_banner">
-	
+	<h1 class="about-hero-text"> About </h1>
 		
 	</div>
 </section>
