@@ -72,51 +72,51 @@ get_header(); ?>
   </section>
   <section class="adventures">
 
-<div class="shopstufftitle">
-   <h2> Latest Adventures</h2>
+    <div class="shopstufftitle">
+     <h2> Latest Adventures</h2>
    </div>
 
    <div class="adventures-wrapper">
 
     <div class="big">
-    <div class="adventure-meta">
-     <a class="adventures-text adventures-text-big"> Getting Back to Nature in a Canoe</a>
-     <a class="read-more">Read More</a>
+      <div class="adventure-meta">
+       <a class="adventures-text adventures-text-big"> Getting Back to Nature in a Canoe</a>
+       <a class="read-more big-read-more">Read More</a>
      </div>
    </div>
 
    <div class="mediumwithsmalls">
 
      <div class="medium">
-     <div class="adventure-meta">
-       <a class="adventures-text adventures-text-medium"> A bonfire with friends on the beach
-        A Night with Friends at the Beach</a>
-        <a class="read-more">Read More</a>
-        </div>
-      </div>
+      <div class="adventure-meta">
+       <a class="adventures-text adventures-text-medium">
+         A Night with Friends at the Beach</a>
+         <a class="read-more medium-read-more">Read More</a>
+       </div>
+     </div>
 
-      <div class="smalls">
+     <div class="smalls">
 
-        <div class="small1">
+      <div class="small1">
         <div class="adventure-meta">
           <a class="adventures-text adventures-text-small"> Taking in the View at Big Mountain</a>
           <a class="read-more">Read More</a>
-          </div>
         </div>
+      </div>
 
-        <div class="small2">
+      <div class="small2">
         <div class="adventure-meta">
           <a class="adventures-text adventures-text-small"> Star-Gazing at the Night Sky </a>
           <a class="read-more">Read More</a>
-          </div>
         </div>
       </div>
-      
     </div>
+
   </div>
-  <div class="advntures-button-wrapper">
-    <a class="advntures-button"> Button yo </a>
-  </div>
+</div>
+<div class="advntures-button-wrapper">
+  <a class="advntures-button"> Button yo </a>
+</div>
 </section>
 
 <?php get_footer(); ?>

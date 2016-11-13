@@ -77,6 +77,17 @@
 	}
 	
 }
+.comment-author-avatar{
+	img{
+		border-radius: 50px;
+
+	}
+}
+.comments-link{
+	a{
+		color: white;
+	}
+}
 .comments-title{
 	text-transform: uppercase;
 	font-family: $font__secoundary;

@@ -573,7 +573,7 @@ a {
 .menu-item a {
   font-family: Novecento Sans Web,sans-serif;
   text-transform: uppercase;
-  padding: 5px;
+  padding: 15px;
   color: #248A83; }
   .menu-item a:hover {
     color: #144d49; }
@@ -603,6 +603,7 @@ a {
         justify-content: space-between;
     -ms-flex-align: center;
         align-items: center;
+    margin: 0 auto;
     max-width: 1120px; }
   .main-navigation .logo {
     margin-left: 50px;
@@ -671,6 +672,9 @@ a {
   text-align: right;
   width: 50%; }
 
+.fuckingdisapear {
+  display: none; }
+
 .search-field {
   width: 250px;
   font-family: Novecento Sans Web, sans-serif;
@@ -683,7 +687,7 @@ a {
     border: none; }
 
 .search-show {
-  padding-right: 10px; }
+  padding: 0 15px; }
 
 .search-form {
   display: -ms-flexbox;
@@ -780,7 +784,19 @@ h3 {
 .adventure-meta {
   width: 90%;
   height: 50%;
-  position: relative; }
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  margin: 0 auto; }
+  .adventure-meta .big-read-more {
+    bottom: -15px; }
+  .adventure-meta .adventures-text-medium {
+    font-size: 2.5rem; }
+  .adventure-meta .medium-read-more {
+    bottom: -80px;
+    left: 0; }
 
 .adventures {
   display: -ms-flexbox;
@@ -802,7 +818,7 @@ h3 {
   border: 1px solid black;
   bottom: 10px;
   left: 15px;
-  padding: 0.75rem 1.5rem;
+  padding: 0.65rem 1.25rem;
   text-transform: uppercase;
   font-family: Novecento Sans Web, sans-serif; }
   .read-more:hover {
@@ -842,7 +858,8 @@ h3 {
 .onefrontpagepost {
   background: grey;
   -ms-flex-preferred-size: 33.333%;
-      flex-basis: 33.333%; }
+      flex-basis: 33.333%;
+  border: white 10px solid; }
 
 .adventures-wrapper {
   display: -ms-flexbox;
@@ -863,6 +880,7 @@ h3 {
   background-size: auto,cover;
   border-right: 20px solid white; }
   .big a {
+    line-height: 1.5;
     border-color: white;
     color: white; }
 
@@ -876,6 +894,8 @@ h3 {
     height: 250px;
     width: 100%; }
     .mediumwithsmalls .medium a {
+      margin-top: 60px;
+      line-height: 1.25;
       border-color: white;
       color: white; }
   .mediumwithsmalls .smalls {
@@ -1252,6 +1272,8 @@ object {
   border-top: 1px solid #e1e1e1;
   padding-top: 35px;
   padding-bottom: 60px; }
+  .search-pagination .current {
+    background: grey; }
 
 .page-numbers {
   padding: .5rem .8rem;
@@ -1533,6 +1555,12 @@ article .type-post {
   .comment-form-email label {
     display: -ms-flexbox;
     display: flex; }
+
+.comment-author-avatar img {
+  border-radius: 50px; }
+
+.comments-link a {
+  color: white; }
 
 .comments-title {
   text-transform: uppercase;
