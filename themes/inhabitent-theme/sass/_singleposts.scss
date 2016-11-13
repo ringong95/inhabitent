@@ -1,17 +1,4 @@
-<<<<<<< HEAD
-.type-product{
-	
-	
-}
-.single-journal{
-	width: 75%;
-	padding-top: 100px;
-}
-.entry-header{
-	position: relative;
 
-}
-=======
 .type-post{
 	display: flex;
 	flex-wrap: wrap;
@@ -21,10 +8,66 @@
 .wp-post-image{
 	margin: 0 auto;
 }
-.site-main{
-	display: flex;
-	justify-content: center;
-	background: steelblue;
-	flex-wrap: wrap
+.social-media{
+	// height: 100px;
+	color: black;
+	border: 1px black solid;
+	padding: 15px 20px;
+	font-family: $font__secoundary;
+	&:hover{
+		color: white;
+		background: $color_text-green;
+	}
+
 }
->>>>>>> 4146e22fe0f596858aa157ec08599f539d921277
+.type-post{
+	article &{
+		margin: 0;
+	}
+}
+.social-media-wrapper{
+	// height: 100px;
+	display: flex;
+	align-self:flex-end;
+}
+
+
+
+/*
+*
+*Single products
+*
+*/
+.single-product-page{
+	padding-top: 100px;
+	display: flex;
+	width: 1120px;
+	margin: 0 auto;
+}
+.single-product-image{
+	
+	width: 50%;
+	margin-right: 5%;
+
+}
+.product_price{
+	margin-top: 10px;
+	margin-bottom: 40px;
+	font-family: $font__secoundary;
+	text-transform: uppercase;
+}
+.single-product-content{
+	width: 50%;
+	margin: 0;
+	display: flex;
+	flex-wrap:wrap;
+	h1{
+		margin: 0;
+		color: $color__brownthing;
+		font-family: $font__secoundary;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+}
+
+.search-field{}

@@ -10,7 +10,7 @@ a {
 		height: 30px; 
 		
 	}
-	color: $color__link;
+	color: $color_text-green;
 
 	&:visited {
 		// color: $color__link-visited;
@@ -55,11 +55,7 @@ a {
 }
 
 }
-.search-field{
-	// display: none;
-	margin: 0 auto;
-	// transisition: 
-}
+
 .right-menu{
 	display: flex;
 }
@@ -182,4 +178,18 @@ a {
 		text-align: right;
 		width: 50%;
 	}
+}
+.search-field{
+	// display: none;
+}
+.search-form{
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.fieldset{
+	border: none;
+}
+.flexcity{
+	display: flex;
 }

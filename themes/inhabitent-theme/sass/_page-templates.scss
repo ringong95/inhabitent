@@ -3,3 +3,72 @@
 --------------------------------------------------------------*/
 
 /* Front page */
+.single-journal{
+	width: 70%;
+}
+.post-105{
+	padding-top: 100px;
+	.entry-header{
+		width: 75%;
+		// margin: 0 auto;
+		h1{
+			font-family: $font__secoundary;
+			font-size: 2.4rem;
+			text-align: left;
+		}
+	}
+}
+
+.entry-content{
+	width: 100%;
+	margin: 0 auto;
+
+	p{
+		font-family: $font__main;
+	}
+	h2{
+		font-size: 35px;
+		text-transform: uppercase;
+
+		font-family: $font__secoundary;
+	}
+
+}
+.page-content{
+	p{
+		font-family: $font__main;
+	}
+}
+.top-padding{
+	padding-top: 100px;
+}
+.page-title{
+	font-family:  $font__secoundary;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.star{
+	color:$color__brownthing;
+}
+.wpcf7-form{
+	p{
+		font-family: $font__secoundary;
+		font-weight: 100;
+		text-transform: uppercase;
+	}
+}
+.search-pagination{
+	margin-top: 65px;
+	border-top: 1px solid #e1e1e1;
+	padding-top: 35px;
+	padding-bottom: 60px;
+}
+.page-numbers {
+	padding: .5rem .8rem;
+	font-family: $font__secoundary;
+	text-transform: uppercase;
+	align-self: center;
+	background: $color_text-green;
+	color: white;
+	width: 10px;
+}

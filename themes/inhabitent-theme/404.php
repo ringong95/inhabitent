@@ -8,9 +8,9 @@
  */
 
 get_header(); ?>
-
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+<div class="side_bar_enabler">
+	<div id="primary" class="content-area, journal">
+		<main id="main" class="site-main, journal_index" role="main">
 
 			<section class="error-404 not-found">
 				<header class="page-header">
@@ -52,4 +52,6 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
+<?php get_sidebar(); ?>
+</div>
 <?php get_footer(); ?>

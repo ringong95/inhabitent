@@ -58,3 +58,22 @@
 .adventures{
 	margin-bottom: 50px;
 }
+.search-header{
+	.search-meta{
+		padding: 10px 0;
+		font-family: $font__secoundary;
+			text-transform: uppercase;
+	}
+	.entry-title{
+		a{
+			font-size: 35px;
+			font-family: $font__secoundary;
+			text-transform: uppercase;
+			font-weight: bold;
+		} 
+	}
+
+}
+.search-result{
+	padding-bottom: 50px;
+}

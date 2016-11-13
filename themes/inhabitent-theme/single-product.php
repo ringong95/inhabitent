@@ -6,29 +6,72 @@
  */
 
 get_header(); ?>
-<div class="side_bar_enabler">
-<div id="primary" class="content-area , single-journal">
+
+<div id="primary" class="content-area ">
 	<main id="main" class="site-main" role="main">
-	<!-- 	<?php echo CFS()->get( 'product_price' ); ?> -->
+
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php get_template_part( 'template-parts/content', 'single' ); ?>
+			
+			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+				<div class=""
+				<header class="entry-header, journal-header">
+					<div class="single-product-page">
+						<?php if ( has_post_thumbnail() ) : ?>
+							<div class="single-product-image">
+								<?php the_post_thumbnail( ); ?>
+							</div class="single-product-content">
+						<?php endif; ?>
+						<div class="single-product-content">
+							<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
-			<?php the_post_navigation(); ?>
+							
 
-			<?php
+						</header><!-- .entry-header -->
+
+						<div class="entry-content">
+						
+						<p class="product_price"><?php echo CFS()->get( 'product_price' ); ?>	</p>
+							<?php the_content(); ?>
+							<?php
+							wp_link_pages( array(
+								'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
+								'after'  => '</div>',
+								) );
+								?>
+
+
+							</div><!-- .entry-content -->
+
+							<footer class="entry-footer">
+								<?php red_starter_entry_footer(); ?>
+								<div class="social-media-wrapper">
+									<a class="social-media"><i class="fa fa-facebook-square" aria-hidden="true"></i> TEXT YO</a>
+									<a class="social-media"><i class="fa fa-facebook-square" aria-hidden="true"></i> TEXT YO</a>
+									<a class="social-media"><i class="fa fa-facebook-square" aria-hidden="true"></i> TEXT YO</a>
+								</div>
+							</div>
+						</footer><!-- .entry-footer -->
+					</div>
+				</article>
+
+
+
+				<?php
 				// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
-			?>
+				if ( comments_open() || get_comments_number() ) :
+					comments_template();
+				endif;
+				?>
 
-		<?php endwhile; // End of the loop. ?>
-		<?php get_header();?>
-	</main><!-- #main -->
-</div><!-- #primary -->
-<?php get_sidebar(); ?>
-</div>
+			<?php endwhile; // End of the loop. ?>
 
-<?php get_footer(); ?>
+
+		</main><!-- #main -->
+
+	</div><!-- #primary -->
+
+
+
+	<?php get_footer(); ?>

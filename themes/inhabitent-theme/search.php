@@ -6,9 +6,9 @@
  */
 
 get_header(); ?>
-
-	<section id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+<div class="side_bar_enabler">
+	<section id="primary" class="content-area, single-journalpost , top-padding">
+		<main id="main" class="site-main, single-journalpost" role="main">
 
 		<?php if ( have_posts() ) : ?>
 
@@ -35,4 +35,5 @@ get_header(); ?>
 	</section><!-- #primary -->
 
 <?php get_sidebar(); ?>
+</div>
 <?php get_footer(); ?>

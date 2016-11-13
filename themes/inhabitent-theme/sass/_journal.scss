@@ -5,11 +5,15 @@
 .secondary{
 
 }
+.journal-header{
+	position: relative;
+	width: 100%;
+}
 .side_bar_enabler{
 	display: flex;
-	// padding-top: 100px;
 }
 .entry-header{
+	// position: relative;
 	width: 100%;
 }
 .journal_index{
@@ -21,6 +25,7 @@
 }
 .single-journalpost{
 	width: 80%;
+	margin: 0 auto;
 }
 .type-post{
 	display: flex;
@@ -36,7 +41,7 @@
 
 
 .size-large{
-	height: 100%;
+	
 	width: 100%;
 }
 .journal{
@@ -57,12 +62,15 @@
 	width: 150px;
 	border: 1px solid black;
 	text-align: center;
+	font-family: $font__secoundary;
 	text-transform: uppercase;
 	.moretag{
-		font-size: .9rem;
+		color: black;
+		font-size: .8rem;
+
 	}
 	&:hover{
-
+		color: white;
 
 		background: $color_text-green;
 	}

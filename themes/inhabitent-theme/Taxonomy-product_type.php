@@ -28,7 +28,7 @@ get_header(); ?>
 				<div class="minibutton">
 
 
-					<a  href="product_type/<?php echo $term->slug;?>"> <?php echo $term->name ?> </a>
+					<a  href="/inhabitent/product_type/<?php echo $term->slug;?>"> <?php echo $term->name ?> </a>
 				</div>
 			<?php endforeach; ?>
 			</div>

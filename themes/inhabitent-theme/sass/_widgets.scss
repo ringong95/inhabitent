@@ -1,7 +1,20 @@
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
-
+.wpcf7-text{
+	border-radius: 1px;
+	background: #f4f4f4;
+}
+.wpcf7-textarea{
+	padding: 5px;
+	background: #f4f4f4;
+}
+.input[type=text]{
+	padding: 5px;
+}
+.wpcf7-submit{
+	background: $color_text-green;
+}
 .widget {
 	margin: 0 0 $base__space-unit;
 	height: 200px;
@@ -17,6 +30,19 @@
 /* Search widget. */
 .widget_search .search-submit {
 	display: none;
+}
+.widget{
+	margin-bottom: 50px;
+	ul{
+		margin: 0;
+	}
+}
+
+.widgettitle{
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1.5rem;
+	font-family: $font__secoundary;
 }
 
 .widget-area{
@@ -55,8 +81,8 @@
 		display: flex;
 		span{
 
-		font-family: $font__main;
-	}
+			font-family: $font__main;
+		}
 		i{
 			width: 20px;
 			margin-right: 10px;

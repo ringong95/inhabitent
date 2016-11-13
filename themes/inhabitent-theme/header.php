@@ -22,14 +22,15 @@
 	
 	<nav id="site-navigation" class="main-navigation" role="navigation">
 		<div class="logo">
-			<a href="home">
+			<a href="inhabitent/home">
 				<img src=" <?php echo get_template_directory_uri() ?>/images/logos/inhabitent-logo-tent.svg" alt="logo">
 			</a>
 		</div>
 		<div class="right-menu">
+		<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', ) ); ?>
 		<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 	
-		<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', ) ); ?>
+		
 		<?php get_search_form( )?>
 		</div>
 	</nav><!-- #site-navigation -->

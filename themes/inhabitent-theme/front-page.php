@@ -10,7 +10,7 @@ get_header(); ?>
 	
 </div>
 <div class="shopstufftitle">
-<h2> Shop Stuff</h2>
+  <h2> Shop Stuff</h2>
 </div>
 <div class="taxonomy_loop">
 
@@ -33,7 +33,9 @@ get_header(); ?>
 
 
 </div>
-
+<div class="shopstufftitle">
+  <h2> Inhabitent Journal</h2>
+</div>
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
 		
@@ -69,26 +71,52 @@ get_header(); ?>
     </div><!-- #primary -->
   </section>
   <section class="adventures">
+
+<div class="shopstufftitle">
    <h2> Latest Adventures</h2>
-   <div class="adventures-wrapper">
-    <div class="big">
-     <a class="adventures-text"> Getting Back to Nature in a Canoe</a>
-     <a class="read-more">Read More</a>
    </div>
-   <div class="mediumwithsmalls">
-     <div class="medium">
-       <a> A bonfire with friends on the beach
-A Night with Friends at the Beach</a>
+
+   <div class="adventures-wrapper">
+
+    <div class="big">
+    <div class="adventure-meta">
+     <a class="adventures-text adventures-text-big"> Getting Back to Nature in a Canoe</a>
+     <a class="read-more">Read More</a>
      </div>
-     <div class="smalls">
-      <div class="small1"></div>
-      <div class="small2"></div>
+   </div>
+
+   <div class="mediumwithsmalls">
+
+     <div class="medium">
+     <div class="adventure-meta">
+       <a class="adventures-text adventures-text-medium"> A bonfire with friends on the beach
+        A Night with Friends at the Beach</a>
+        <a class="read-more">Read More</a>
+        </div>
+      </div>
+
+      <div class="smalls">
+
+        <div class="small1">
+        <div class="adventure-meta">
+          <a class="adventures-text adventures-text-small"> Taking in the View at Big Mountain</a>
+          <a class="read-more">Read More</a>
+          </div>
+        </div>
+
+        <div class="small2">
+        <div class="adventure-meta">
+          <a class="adventures-text adventures-text-small"> Star-Gazing at the Night Sky </a>
+          <a class="read-more">Read More</a>
+          </div>
+        </div>
+      </div>
+      
     </div>
   </div>
-</div>
-<div class="advntures-button-wrapper">
-  <a class="advntures-button"> Button yo </a>
-</div>
+  <div class="advntures-button-wrapper">
+    <a class="advntures-button"> Button yo </a>
+  </div>
 </section>
 
 <?php get_footer(); ?>

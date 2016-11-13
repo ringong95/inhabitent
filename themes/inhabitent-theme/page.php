@@ -8,14 +8,12 @@
 get_header(); ?>
 <div class="side_bar_enabler">
 <div id="primary" class="content-area , single-journal">
-	<main id="main" class="site-main" role="main">
-	<!-- 	<?php echo CFS()->get( 'product_price' ); ?> -->
+	<main id="main" class="site-main, single-journalpost" role="main">
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
 			<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
-			<?php the_post_navigation(); ?>
 
 			<?php
 				// If comments are open or we have at least one comment, load up the comment template.
@@ -25,7 +23,7 @@ get_header(); ?>
 			?>
 
 		<?php endwhile; // End of the loop. ?>
-		<?php get_header();?>
+	
 	</main><!-- #main -->
 </div><!-- #primary -->
 <?php get_sidebar(); ?>

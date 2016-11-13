@@ -5,11 +5,13 @@
 }
 .shopstufftitle{
 	h2{
+
 		font-family: $font__secoundary;
 		font-size: 40px;
 		margin: 50px 0;
 		text-align: center;
-    font-weight: 300;
+		// font-weight: bold
+		text-transform: uppercase;
 	}
 }
 h3{
@@ -18,12 +20,17 @@ h3{
 	font-weight: bold;
 	color: $color_text-green
 }
+.adventure-meta{
+	width: 90%;
+	height: 50%;
+	position: relative;
+}
 .adventures{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	h2{
-		width: 60%;
+		// width: 60%;
 		font-size: 50px;
 		// margin: 0 auto;
 		text-align: center;
@@ -42,7 +49,7 @@ h3{
 	text-transform: uppercase;
 	font-family: $font__secoundary;
 	&:hover {
-		background-color: $color_text-green ;
+		background-color: $color_text-green;
 		border: none;
 		color: white;
 
@@ -55,8 +62,8 @@ h3{
 .journal_wrapper{
 	background: white;
 	position: relative;
-	border: 1px grey solid;
-	border-top: 5px grey solid;
+	border: 1px solid #e1e1e1;
+	border-top: 5px solid #e1e1e1;
 	height: 175px;
 	p{
 		font-size: .75rem;
@@ -96,56 +103,72 @@ h3{
 	display:flex;
 	margin: 0 auto;
 	width: 1120px;
-<<<<<<< HEAD
-	// height: 575px;	
-=======
-	height: 575px;
->>>>>>> 4146e22fe0f596858aa157ec08599f539d921277
-	.big {
-		background:  url("../../images/adventure-photos/canoe-girl.jpg")center;
+
+} 
+.adventures-text{
+	margin: 0 auto;
+	color: white;
+
+}
+.adventures-text-big{
+	font-size: 3rem;
+}
+.big{
+	// position: relative;
+	a{
+		border-color: white;
+		color: white;	
+	}
+	
+	width: 50%;
+	background: url("../../images/adventure-photos/canoe-girl.jpg")center;
+	background-size: cover;
+	border-right: 20px solid white;
+}
+.mediumwithsmalls{
+	width: 50%;
+	.medium{
+		// position: relative;
+		a{
+			border-color: white;
+			color: white;	
+		}
+		border-bottom: 20px solid white;
+		background: url("../../images/adventure-photos/beach-bonfire.jpg")center;
 		background-size: cover;
 		padding: 0;
-		height: 500px; 
-		width: 50%;	
-		border-right: 20px solid white;
-		a{
-			text-decoration: none;
-<<<<<<< HEAD
-			color: black;	
-=======
-			color: BLack;	
->>>>>>> 4146e22fe0f596858aa157ec08599f539d921277
-		}
-	} 
-	.mediumwithsmalls{
-		width: 50%;
-		.medium{
-			border-bottom: 20px solid white;
-			background: url("../../images/adventure-photos/beach-bonfire.jpg")center;
+		height: 250px;
+		width: 100%;
+	}
+	.smalls{
+		display:flex;
+		width: 100%;
+		.small1{
+			// position: relative;
+			a{
+				border-color: white;
+				color: white;	
+			}
+			background: url("../../images/adventure-photos/mountain-hikers.jpg")center;
 			background-size: cover;
-			padding: 0;
 			height: 250px;
-			width: 100%;
+			width: 50%;
+			border-right: 10px solid white;
 		}
-		.smalls{
-			display:flex;
-			width: 100%;
-			.small1{
-				background: url("../../images/adventure-photos/mountain-hikers.jpg")center;
-				background-size: cover;
-				height: 250px;
-				width: 50%;
-				border-right: 10px solid white;
+		.small2{
+			// position: relative;
+			a{
+				border-color: white;
+				color: white;	
 			}
-			.small2{
-				background: url("../../images/adventure-photos/night-sky.jpg")center;
-				background-size: cover;
-				height: 250px;
-				width: 50%;
-				border-left: 10px solid white;
-			}
+			background: url("../../images/adventure-photos/night-sky.jpg")center;
+			background-size: cover;
+			height: 250px;
+			width: 50%;
+			border-left: 10px solid white;
 		}
 	}
+
 }
 .taxonomy_loop{
 	display: flex;
@@ -158,15 +181,15 @@ h3{
 .category-links{
 	display: flex;
 	flex-wrap:wrap;
-	border: 1px $color__border-abbr solid;
-	border-top: 5px $color__border-abbr solid;
+	border: 1px solid #e1e1e1;
+	border-top: 5px  solid #e1e1e1;
 	width: 24%;
 	justify-content: center;
 	height: 250px;
 
 	text-align: center;
 	&:hover{
-		border-color: $color__background-ins;
+		border-color: $color__brownthing;
 	}
 	p{
 		width: 90%;
@@ -180,17 +203,17 @@ h3{
 
 }
 .category-link{
-	font-size: .9rem;
+	font-size: .85rem;
 	text-decoration: none;
 	color: white;
-
+	text-transform: uppercase;
+	font-family: $font__secoundary;
 	// border: 1px solid black;
 	height: 50px;
 	display: flex;
 	align-items: center;
 	justify-content: center;	
-	width: 125px;
-	padding: 0.75rem 1.5rem;    
+	padding: 0.75rem 1.6rem;    
 	background-color: $color_text-green;
 	&:hover {
 		background-color: $color_text-darkgreen;
