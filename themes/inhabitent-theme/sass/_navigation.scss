@@ -37,7 +37,7 @@ a {
 		padding: 15px;
 		color: $color_text-green;
 		&:hover{
-			color: $color_text-darkgreen;
+			color: $color__link-hover;
 		}
 	}
 }
@@ -179,11 +179,8 @@ a {
 		width: 50%;
 	}
 }
-.fuckingdisapear{
-	display: none;
 
-}
-.search-field{
+.main-navigation .search-field{
 
 	width: 250px;
 	font-family: $font__secoundary;
@@ -198,18 +195,18 @@ a {
 	}
 
 }
-.search-show{
+.main-navigation .search-show{
 	padding: 0 15px;
 }
-.search-form{
+.main-navigation .search-form{
 	display: flex;
 	flex-wrap: nowrap;
 }
 
-.fieldset{
+.main-navigation .fieldset{
 	border: none;
 }
-.flexcity{
+.main-navigation .flexcity{
 	display: flex;
 }
 .nomargins{

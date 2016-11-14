@@ -369,6 +369,9 @@ mark, ins {
 big {
   font-size: 125%; }
 
+body {
+  color: #404040; }
+
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
@@ -555,158 +558,6 @@ textarea {
   width: 100%; }
 
 /*--------------------------------------------------------------
-# Navigation
---------------------------------------------------------------*/
-/* Links */
-a {
-  color: #248A83; }
-  a img {
-    height: 30px; }
-  a:hover, a:focus, a:active {
-    color: midnightblue; }
-  a:focus {
-    outline: thin dotted; }
-  a:hover, a:active {
-    outline: 0; }
-
-/* Menus */
-.menu-item a {
-  font-family: Novecento Sans Web,sans-serif;
-  text-transform: uppercase;
-  padding: 15px;
-  color: #248A83; }
-  .menu-item a:hover {
-    color: #144d49; }
-
-.menu-menu-1-container {
-  margin: auto; }
-
-.right-menu {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center; }
-
-.main-navigation {
-  position: fixed;
-  border-bottom: 1px grey solid;
-  height: 50px;
-  background: rgba(255, 255, 255, 0.85);
-  z-index: 1;
-  width: 100%;
-  margin: 0 auto; }
-  .main-navigation .container {
-    height: 50px;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-        justify-content: space-between;
-    -ms-flex-align: center;
-        align-items: center;
-    margin: 0 auto;
-    max-width: 1120px; }
-  .main-navigation .logo {
-    margin-left: 50px;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-        align-items: center;
-    height: 100%; }
-  .main-navigation ul {
-    display: none;
-    list-style: none;
-    margin: 0;
-    padding-left: 0; }
-    .main-navigation ul ul {
-      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-      float: left;
-      position: absolute;
-      top: 1.5em;
-      left: -999em;
-      z-index: 99999; }
-      .main-navigation ul ul ul {
-        left: -999em;
-        top: 0; }
-      .main-navigation ul ul li:hover > ul,
-      .main-navigation ul ul li.focus > ul {
-        left: 100%; }
-      .main-navigation ul ul a {
-        width: 200px; }
-    .main-navigation ul li:hover > ul,
-    .main-navigation ul li.focus > ul {
-      left: auto; }
-  .main-navigation li {
-    float: left;
-    position: relative; }
-  .main-navigation a {
-    display: block;
-    text-decoration: none; }
-
-/* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
-  display: block; }
-
-@media screen and (min-width: 37.5em) {
-  .menu-toggle {
-    display: none; }
-  .main-navigation ul {
-    display: block; } }
-
-.site-main .comment-navigation, .site-main
-.posts-navigation, .site-main
-.post-navigation {
-  margin: 0 0 1.5em;
-  overflow: hidden; }
-
-.comment-navigation .nav-previous,
-.posts-navigation .nav-previous,
-.post-navigation .nav-previous {
-  float: left;
-  width: 50%; }
-
-.comment-navigation .nav-next,
-.posts-navigation .nav-next,
-.post-navigation .nav-next {
-  float: right;
-  text-align: right;
-  width: 50%; }
-
-.fuckingdisapear {
-  display: none; }
-
-.search-field {
-  width: 250px;
-  font-family: Novecento Sans Web, sans-serif;
-  text-transform: uppercase;
-  display: none;
-  background: none;
-  border: none; }
-  .search-field:focus {
-    outline: none;
-    border: none; }
-
-.search-show {
-  padding: 0 15px; }
-
-.search-form {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap; }
-
-.fieldset {
-  border: none; }
-
-.flexcity {
-  display: -ms-flexbox;
-  display: flex; }
-
-.nomargins {
-  margin: 0;
-  padding: 0; }
-
-/*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
 /* Text meant only for screen readers. */
@@ -783,20 +634,29 @@ h3 {
 
 .adventure-meta {
   width: 90%;
-  height: 50%;
+  margin: 0 auto;
   position: relative;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
       align-items: center;
-  margin: 0 auto; }
-  .adventure-meta .big-read-more {
-    bottom: -15px; }
+  line-height: 1; }
+  .adventure-meta .read-more {
+    position: absolute;
+    font-size: 1rem;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid white;
+    bottom: -60px;
+    padding: 0.65rem 1.25rem;
+    text-transform: uppercase;
+    font-family: Novecento Sans Web, sans-serif; }
+    .adventure-meta .read-more:hover {
+      background-color: #248A83;
+      border: none;
+      color: white; }
   .adventure-meta .adventures-text-medium {
     font-size: 2.5rem; }
-  .adventure-meta .medium-read-more {
-    bottom: -80px;
-    left: 0; }
 
 .adventures {
   display: -ms-flexbox;
@@ -808,23 +668,6 @@ h3 {
   .adventures h2 {
     font-size: 50px;
     text-align: center; }
-
-.read-more {
-  position: absolute;
-  font-size: 1rem;
-  text-decoration: none;
-  text-align: center;
-  color: black;
-  border: 1px solid black;
-  bottom: 10px;
-  left: 15px;
-  padding: 0.65rem 1.25rem;
-  text-transform: uppercase;
-  font-family: Novecento Sans Web, sans-serif; }
-  .read-more:hover {
-    background-color: #248A83;
-    border: none;
-    color: white; }
 
 .wp-post-image {
   height: 250px; }
@@ -865,10 +708,11 @@ h3 {
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
-  width: 1120px; }
+  width: 1120px;
+  height: 540px; }
 
 .adventures-text {
-  margin: 0 auto;
+  margin-top: 25px;
   color: white; }
 
 .adventures-text-big {
@@ -876,6 +720,7 @@ h3 {
 
 .big {
   width: 50%;
+  height: 100%;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.01) 100%), url("../../images/adventure-photos/canoe-girl.jpg") center;
   background-size: auto,cover;
   border-right: 20px solid white; }
@@ -885,27 +730,34 @@ h3 {
     color: white; }
 
 .mediumwithsmalls {
-  width: 50%; }
+  width: 50%;
+  height: 100%; }
   .mediumwithsmalls .medium {
     border-bottom: 20px solid white;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.01) 100%), url("../../images/adventure-photos/beach-bonfire.jpg") center;
     background-size: auto, cover;
     padding: 0;
-    height: 250px;
+    height: 50%;
     width: 100%; }
     .mediumwithsmalls .medium a {
-      margin-top: 60px;
       line-height: 1.25;
       border-color: white;
       color: white; }
   .mediumwithsmalls .smalls {
     display: -ms-flexbox;
     display: flex;
-    width: 100%; }
+    width: 100%;
+    height: 50%; }
+    .mediumwithsmalls .smalls .adventures-text-small {
+      margin-top: 50px;
+      letter-spacing: 1.5px;
+      font-size: 1.5rem;
+      line-height: 1.25;
+      width: 90%; }
     .mediumwithsmalls .smalls .small1 {
       background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.01) 100%), url("../../images/adventure-photos/mountain-hikers.jpg") center;
       background-size: auto, cover;
-      height: 250px;
+      height: 100%;
       width: 50%;
       border-right: 10px solid white; }
       .mediumwithsmalls .smalls .small1 a {
@@ -914,7 +766,7 @@ h3 {
     .mediumwithsmalls .smalls .small2 {
       background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.01) 100%), url("../../images/adventure-photos/night-sky.jpg") center;
       background-size: auto, cover;
-      height: 250px;
+      height: 100%;
       width: 50%;
       border-left: 10px solid white; }
       .mediumwithsmalls .smalls .small2 a {
@@ -1025,6 +877,23 @@ h3 {
   text-align: center;
   margin: auto auto; }
 
+.search .page-content .search-show i {
+  display: none; }
+
+.error404 .page-content .search-show i {
+  display: none; }
+
+.error404 .page-content .search-field {
+  display: block;
+  padding: 7.5px;
+  background: #f4f4f4;
+  padding-left: none;
+  margin-bottom: 35px; }
+
+.search .page-content .search-field {
+  display: block;
+  padding: 5px; }
+
 #login h1 a {
   background: blue;
   background-size: contain; }
@@ -1061,6 +930,8 @@ p {
 .minibutton {
   margin: 0 auto; }
   .minibutton a {
+    font-family: Novecento Sans Web, sans-serif;
+    text-transform: uppercase;
     font-size: 1.5rem;
     text-decoration: none;
     color: #248A83; }
@@ -1068,7 +939,7 @@ p {
 .products {
   width: 1120px;
   margin: 0 auto;
-  border-top: 2px dashed #666;
+  border-top: 1px dashed #c8c8c8;
   padding: 50px 0;
   margin-top: 50px; }
 
@@ -1321,6 +1192,9 @@ object {
         justify-content: flex-end;
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%; }
+
+.underlinehover:hover {
+  text-decoration: underline; }
 
 .primary {
   display: -ms-flexbox;
@@ -1609,3 +1483,152 @@ article .type-post {
 
 #url {
   width: 100%; }
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+/* Links */
+a {
+  color: #248A83; }
+  a img {
+    height: 30px; }
+  a:hover, a:focus, a:active {
+    color: #2f1339; }
+  a:focus {
+    outline: thin dotted; }
+  a:hover, a:active {
+    outline: 0; }
+
+/* Menus */
+.menu-item a {
+  font-family: Novecento Sans Web,sans-serif;
+  text-transform: uppercase;
+  padding: 15px;
+  color: #248A83; }
+  .menu-item a:hover {
+    color: #2f1339; }
+
+.menu-menu-1-container {
+  margin: auto; }
+
+.right-menu {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center; }
+
+.main-navigation {
+  position: fixed;
+  border-bottom: 1px grey solid;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.85);
+  z-index: 1;
+  width: 100%;
+  margin: 0 auto; }
+  .main-navigation .container {
+    height: 50px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: center;
+        align-items: center;
+    margin: 0 auto;
+    max-width: 1120px; }
+  .main-navigation .logo {
+    margin-left: 50px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    height: 100%; }
+  .main-navigation ul {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding-left: 0; }
+    .main-navigation ul ul {
+      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+      float: left;
+      position: absolute;
+      top: 1.5em;
+      left: -999em;
+      z-index: 99999; }
+      .main-navigation ul ul ul {
+        left: -999em;
+        top: 0; }
+      .main-navigation ul ul li:hover > ul,
+      .main-navigation ul ul li.focus > ul {
+        left: 100%; }
+      .main-navigation ul ul a {
+        width: 200px; }
+    .main-navigation ul li:hover > ul,
+    .main-navigation ul li.focus > ul {
+      left: auto; }
+  .main-navigation li {
+    float: left;
+    position: relative; }
+  .main-navigation a {
+    display: block;
+    text-decoration: none; }
+
+/* Small menu. */
+.menu-toggle,
+.main-navigation.toggled ul {
+  display: block; }
+
+@media screen and (min-width: 37.5em) {
+  .menu-toggle {
+    display: none; }
+  .main-navigation ul {
+    display: block; } }
+
+.site-main .comment-navigation, .site-main
+.posts-navigation, .site-main
+.post-navigation {
+  margin: 0 0 1.5em;
+  overflow: hidden; }
+
+.comment-navigation .nav-previous,
+.posts-navigation .nav-previous,
+.post-navigation .nav-previous {
+  float: left;
+  width: 50%; }
+
+.comment-navigation .nav-next,
+.posts-navigation .nav-next,
+.post-navigation .nav-next {
+  float: right;
+  text-align: right;
+  width: 50%; }
+
+.main-navigation .search-field {
+  width: 250px;
+  font-family: Novecento Sans Web, sans-serif;
+  text-transform: uppercase;
+  display: none;
+  background: none;
+  border: none; }
+  .main-navigation .search-field:focus {
+    outline: none;
+    border: none; }
+
+.main-navigation .search-show {
+  padding: 0 15px; }
+
+.main-navigation .search-form {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap; }
+
+.main-navigation .fieldset {
+  border: none; }
+
+.main-navigation .flexcity {
+  display: -ms-flexbox;
+  display: flex; }
+
+.nomargins {
+  margin: 0;
+  padding: 0; }

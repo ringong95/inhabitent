@@ -26,8 +26,12 @@ add_filter( 'body_class', 'red_starter_body_classes' );
 */
 function childtheme_custom_login() {
     echo '<style type="text/css">                                                                   
-    h1 a { background:linear-gradient( to bottom, rgba(0,0,0,0.5)0%, rgba(0,0,0,.01) 100%), url('.get_stylesheet_directory_uri().'/images/logos/inhabitent-logo-text-dark.svg) !important; 
-    height: 120px !important; width: 410px !important; margin-left: -40px;}                            
+    h1 a { background: url('.get_stylesheet_directory_uri().'/images/logos/inhabitent-logo-text-dark.svg) !important;
+    background-size: 310px !important;
+    background-repeat: no-repeat !important;
+
+    background-position: bottom !important; 
+    height: 120px !important; width: 310px !important; margin-left: -40px;}                            
 </style>';
 
 }
@@ -44,7 +48,7 @@ function my_styles_method() {
 		$url = CFS()->get ( 'about_background_image'); // This is grabbing the background
         $custom_css = "
         .about_hero_banner{ 
-            background-image: url($url);
+            background-image:linear-gradient( to bottom, rgba(0,0,0,0.5)0%, rgba(0,0,0,.01) 100%), url($url);
         }";
         wp_add_inline_style( 'red-starter-style', $custom_css );
     }
@@ -52,10 +56,10 @@ function my_styles_method() {
     add_action( 'wp_enqueue_scripts', 'my_styles_method' );
 
     function new_excerpt_more($more) {
-       global $post;
-       return '<div class="readmore"><a class="moretag" href="'. get_permalink($post->ID) . '"> Read More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></div>';
-   }
-   add_filter('excerpt_more', 'new_excerpt_more');
+     global $post;
+     return '<div class="readmore"><a class="moretag" href="'. get_permalink($post->ID) . '"> Read More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></div>';
+ }
+ add_filter('excerpt_more', 'new_excerpt_more');
 
 /**
 *this sets the store to set 16 posts

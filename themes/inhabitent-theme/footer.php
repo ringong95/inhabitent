@@ -14,8 +14,8 @@
 
 		<h3> Contact Info</h3>
 
-		<a href="lkfashgjkajaf"><i class="fa fa-facebook" aria-hidden="true"></i> Email goes here </a>
-		<p><i class="fa fa-facebook" aria-hidden="true"></i> Phone number here </p>
+		<a href="lkfashgjkajaf"><i class="fa fa-facebook" aria-hidden="true"></i> <span class="underlinehover">Email goes here </span></a>
+		<p><i class="fa fa-facebook" aria-hidden="true"></i><span class="underlinehover"> Phone number here </span></p>
 		<p>
 			<span><i class="fa fa-facebook-square" aria-hidden="true"></i></span>
 			<span><i class="fa fa-twitter-square" aria-hidden="true"></i></span>

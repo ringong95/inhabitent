@@ -100,14 +100,14 @@ get_header(); ?>
       <div class="small1">
         <div class="adventure-meta">
           <a class="adventures-text adventures-text-small"> Taking in the View at Big Mountain</a>
-          <a class="read-more">Read More</a>
+          <a class="read-more small-read-more">Read More</a>
         </div>
       </div>
 
       <div class="small2">
         <div class="adventure-meta">
           <a class="adventures-text adventures-text-small"> Star-Gazing at the Night Sky </a>
-          <a class="read-more">Read More</a>
+          <a class="read-more small-read-more">Read More</a>
         </div>
       </div>
     </div>
