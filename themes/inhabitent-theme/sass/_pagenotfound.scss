@@ -1,0 +1,23 @@
+.widget_recent_entries{
+	ul{
+		li{
+			padding: 5px 0;
+		}
+	}
+}
+.search-no-results {
+	.flexcity{
+		border-top: 1px solid #e1e1e1;
+		padding-top: 50px;
+	}
+	.page-content{
+		p{
+			display: none;
+		}
+	}
+	.search-field{
+		background-color: #f4f4f4;
+		border: 1px solid #e1e1e1;
+
+	}
+}

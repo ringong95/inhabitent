@@ -21,6 +21,13 @@
 	}
 
 }
+.comments-area{
+	width: 75%;
+}
+.cat-links{
+	margin: 10px;
+	margin-left: 0px;
+}
 .type-post{
 	article &{
 		margin: 0;
@@ -30,6 +37,7 @@
 	// height: 100px;
 	display: flex;
 	align-self:flex-end;
+	padding-top: 25px;
 }
 
 

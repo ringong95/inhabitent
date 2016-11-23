@@ -8,8 +8,6 @@ $('.search-show').on('click', function(){
 	$('#search-1').animate({width: 'toggle'});
 	// Right after it shows it will force you to focus onto it.
 	$('#search-1').focus();
-
-	
 })
 
 $('#search-1').focusout(function(){

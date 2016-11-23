@@ -1,6 +1,6 @@
 .hero-banner{
 	height: 600px;
-	background:linear-gradient( to bottom, rgba(0,0,0,0.5)0%, rgba(0,0,0,.01) 100%), url("../../images/logos/inhabitent-logo-full.svg") center center no-repeat, url("../../images/home-hero.jpg") no-repeat center center;
+	background:url("../../images/logos/inhabitent-logo-full.svg") center center no-repeat,   linear-gradient( to bottom, rgba(0,0,0,0.5)0%, rgba(0,0,0,.01) 100%), url("../../images/home-hero.jpg") no-repeat center center;
 	background-size:auto,  auto ,cover;
 }
 .shopstufftitle{
@@ -19,6 +19,26 @@ h3{
 	font-family: $font__secoundary;
 	font-weight: bold;
 	color: $color_text-green
+}
+.journal_wrapper{
+	.read-more {
+		position: absolute;
+		font-size: 1rem;
+		text-decoration: none;
+		text-align: center;
+		border: 1px black solid;
+		bottom: 10px;
+		left: 10px;
+		padding: 0.65rem 1.25rem;    
+		text-transform: uppercase;
+		font-family: $font__secoundary;
+		&:hover {
+			background-color: $color_text-green;
+			border: none;
+			color: white;
+
+		}
+}
 }
 .adventure-meta{
 	width: 90%;
@@ -56,19 +76,22 @@ h3{
 		font-size: 2.5rem;
 
 	}
-	// .medium-read-more{
-	// 	bottom: -85px;
-	// 	left: 0;
-	// }
+	.medium-read-more{
+		color:white;
+	}
 	// .small-read-more{
 	// 	bottom: -50%;
 	// }
 
 }
+
+	
+
 .adventures{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+
 	h2{
 		// width: 60%;
 		font-size: 50px;
@@ -76,10 +99,17 @@ h3{
 		text-align: center;
 	}
 }
-
-
+.individual-product{
 .wp-post-image{
 	height: 250px;
+}
+}
+
+
+.onefrontpagepost{
+.wp-post-image{
+	height: 250px;
+}
 }
 .journal_wrapper{
 	background: white;
@@ -116,7 +146,7 @@ h3{
 
 }
 .onefrontpagepost{
-	background: grey;
+	background: #e1e1e1;
 	flex-basis: 33.333%;
 	border:white 10px solid;
 	// margin: 0 auto;
@@ -161,7 +191,7 @@ h3{
 			// margin-top: 60px;
 			line-height: 1.25;
 			border-color: white;
-			color: white;	
+			// color: white;	
 		}
 		border-bottom: 20px solid white;
 		background:linear-gradient( to bottom, rgba(0,0,0,0.5)0%, rgba(0,0,0,.01) 100%), url("../../images/adventure-photos/beach-bonfire.jpg")center;
@@ -275,7 +305,7 @@ h3{
 }
 .advntures-button{
 	margin-top: 40px;
-	border: 1px grey solid;
+	border: 1px #666 solid;
 	padding: 15px 70px;
 	text-align: left;
 	color: white;	
@@ -285,3 +315,8 @@ h3{
 		background-color: $color_text-darkgreen
 	}
 }
+.adventures-text{
+		&:hover{
+			color: $color__text-darkwhite;
+		}
+	}

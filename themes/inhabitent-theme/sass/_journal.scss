@@ -67,8 +67,13 @@
 	.moretag{
 		color: black;
 		font-size: .8rem;
-
+	}	
+	&:hover{
+		.moretag{
+		color: white;
+		}
 	}
+	
 	&:hover{
 		color: white;
 

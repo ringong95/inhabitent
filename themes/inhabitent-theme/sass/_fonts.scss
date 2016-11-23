@@ -3,24 +3,24 @@
 --------------------------------------------------------------*/
 
 @font-face {
-	font-family: '';
-	src: url('../fonts/NovecentoSansWeb.eot');
-	src: url('../fonts/NovecentoSansWeb.eot?#iefix') format('embedded-opentype'),
-	url('../fonts/NovecentoSansWeb.woff') format('woff'),
-	url('../fonts/NovecentoSansWeb.ttf') format('truetype'),
-	url('../fonts/NovecentoSansWeb.svg#.') format('svg');
-	font-weight: bold;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: '.';
+	font-family: 'NovecentoSans';
 	src: url('../fonts/NovecentoSansWeb.eot');
 	src: url('../fonts/NovecentoSansWeb.eot?#iefix') format('embedded-opentype'),
 	url('../fonts/NovecentoSansWeb.woff') format('woff'),
 	url('../fonts/NovecentoSansWeb.ttf') format('truetype'),
 	url('../fonts/NovecentoSansWeb.svg#.') format('svg');
 	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'NovecentoSans';
+	src: url('../fonts/NovecentoSansWeb-Bold.eot');
+	src: url('../fonts/NovecentoSansWeb-Bold.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/NovecentoSansWeb-Bold.woff') format('woff'),
+	url('../fonts/NovecentoSansWeb-Bold.ttf') format('truetype'),
+	url('../fonts/NovecentoSansWeb-Boldx.svg#.') format('svg');
+	font-weight: bold;
 	font-style: normal;
 }
 

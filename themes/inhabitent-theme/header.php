@@ -20,7 +20,7 @@
 
 	
 	
-	<nav id="site-navigation" class="main-navigation" role="navigation">
+	<nav id="site-navigation" class="main-navigation">
 	<div class="container">
 		<div class="logo">
 			<a href="inhabitent/home">
@@ -36,6 +36,6 @@
 		</div>
 		</div>
 	</nav><!-- #site-navigation -->
-</header><!-- #masthead -->
+
 
 <div id="content" class="site-content">

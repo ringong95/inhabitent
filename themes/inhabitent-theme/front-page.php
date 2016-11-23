@@ -24,7 +24,7 @@ get_header(); ?>
    foreach ( $taxonomies  as $term ):?>
 
    <div class="category-links">
-    <img src="<?php echo get_template_directory_uri() ?>/images/product-type-icons/<?php echo $term->slug?>.svg">
+    <img src="<?php echo get_template_directory_uri() ?>/images/product-type-icons/<?php echo $term->slug?>.svg" alt="<?php echo $term->slug?> icon">
     <p> <?php echo $term->description ?> </p>
 
     <a href="product_type/<?php echo $term->slug;?> " class="category-link"> <?php echo $term->name ?> Stuff</a>
@@ -62,14 +62,13 @@ get_header(); ?>
           </div>
         <?php endforeach; wp_reset_postdata(); ?>
       </section>
-      <section>
-
+      
 
 
 
       </main><!-- #main -->
     </div><!-- #primary -->
-  </section>
+ 
   <section class="adventures">
 
     <div class="shopstufftitle">
@@ -105,7 +104,7 @@ get_header(); ?>
       </div>
 
       <div class="small2">
-        <div class="adventure-meta">
+        <div class="adventure-meta adventure-meta-small">
           <a class="adventures-text adventures-text-small"> Star-Gazing at the Night Sky </a>
           <a class="read-more small-read-more">Read More</a>
         </div>
@@ -114,7 +113,7 @@ get_header(); ?>
 
   </div>
 </div>
-<div class="advntures-button-wrapper">
+<div class="advntures-button-wrapper adventure-meta-small">
   <a class="advntures-button"> Button yo </a>
 </div>
 </section>

@@ -14,7 +14,7 @@
 
 		<h3> Contact Info</h3>
 
-		<a href="lkfashgjkajaf"><i class="fa fa-facebook" aria-hidden="true"></i> <span class="underlinehover">Email goes here </span></a>
+		<a href="lkfashgjkajaf"><i class="fa fa-facebook" aria-hidden="true"></i> <span class="underlinehover">info@inhabitent.com </span></a>
 		<p><i class="fa fa-facebook" aria-hidden="true"></i><span class="underlinehover"> Phone number here </span></p>
 		<p>
 			<span><i class="fa fa-facebook-square" aria-hidden="true"></i></span>
@@ -29,14 +29,14 @@
 		<p><span class="bolden"> Sunday:</span> Closed</p>
 	</div>
 	<div class="footerLogo">
-	<img src="<?php echo get_template_directory_uri() ?>/images/logos/inhabitent-logo-text.svg">
+	<img src="<?php echo get_template_directory_uri() ?>/images/logos/inhabitent-logo-text.svg" alt="Inhabitent Logo">
 </div>
 <div class="copyright">
 <p> Copyright @ 2016</p>
 </div>
 	
 </footer><!-- #colophon -->
-</div><!-- #page -->
+<!-- #page -->
 
 <?php wp_footer(); ?>
 

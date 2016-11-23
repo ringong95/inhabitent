@@ -37,9 +37,9 @@
 	<footer class="entry-footer">
 		<?php red_starter_entry_footer(); ?>
 		<div class="social-media-wrapper">
-			<a class="social-media"><i class="fa fa-facebook-square" aria-hidden="true"></i> TEXT YO</a>
-			<a class="social-media"><i class="fa fa-facebook-square" aria-hidden="true"></i> TEXT YO</a>
-			<a class="social-media"><i class="fa fa-facebook-square" aria-hidden="true"></i> TEXT YO</a>
+			<a class="social-media"><i class="fa fa-facebook-square" aria-hidden="true"></i> Like</a>
+			<a class="social-media"><i class="fa fa-twitter-square" aria-hidden="true"></i> Tweet</a>
+			<a class="social-media"><i class="fa fa-pinterest-square" aria-hidden="true"></i> Pin</a>
 		</div>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
